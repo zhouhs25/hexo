@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hang Zhou&#39;s corner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hang Zhou's corner">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hang Zhou's corner">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hang Zhou's corner">
+  
+    <link rel="alternate" href="/atom.xml" title="Hang Zhou&#39;s corner" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hang Zhou&#39;s corner</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Records of My Daily Life</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-My-vimrc" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/12/06/My-vimrc/" class="article-date">
+  <time datetime="2016-12-07T04:47:00.120Z" itemprop="datePublished">2016-12-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: My vimrc<br>date: 2016-12-06 23:47:00<br>tags:</p>
+<p>set nocompatible              “ be iMproved, required</p>
+<p>filetype off                  “ required</p>
+<p>let $ROOT=’e:\depot\pplib\drivers\powerplay\’</p>
+<p>“Set mapleader<br>let mapleader = “,”</p>
+<p>set wildignore+=*.d<br>“ set the runtime path to include Vundle and initialize<br>set rtp+=$VIM\vimfiles\bundle\vundle</p>
+<p>call vundle#begin(‘e:\study\bundle’)<br>“ alternatively, pass a path where Vundle should install plugins<br>“call vundle#begin(‘~/some/path/here’)</p>
+<p>“ let Vundle manage Vundle, required<br>Plugin ‘VundleVim/Vundle.vim’</p>
+<p>“Plugin ‘Rip-Rip/clang_complete’<br>Plugin ‘scrooloose/nerdtree’</p>
+<p>“ bufexplorer<br>“Plugin ‘jlanzarotta/bufexplorer’</p>
+<p>“Plugin taglist<br>Plugin ‘taglist.vim’</p>
+<p>“minibufexpl<br>Plugin ‘fholgado/minibufexpl.vim’</p>
+<p>“EasyMotion<br>Plugin ‘easymotion/vim-easymotion’</p>
+<p>“autoclose<br>Plugin ‘Townk/vim-autoclose’</p>
+<p>“ctrlp<br>Plugin ‘kien/ctrlp.vim’<br>“ctags<br>“Plugin ‘Valloric/YouCompleteMe’</p>
+<p>“cscope<br>Plugin ‘vim-scripts/cscope.vim’</p>
+<p>“easygrep<br>Plugin ‘dkprice/vim-easygrep’</p>
+<p>“ag<br>Plugin ‘rking/ag.vim’</p>
+<p>“gruvbox color scheme<br>“Plugin ‘morhetz/gruvbox’</p>
+<p>“Plugin ‘sickill/vim-monokai’<br>“Plugin ‘solarized/twilight’</p>
+<p>Plugin ‘vim-scripts/candy.vim’</p>
+<p>“highlight<br>Plugin ‘jaxbot/semantic-highlight.vim’</p>
+<p>“AsyncRun<br>Plugin ‘skywind3000/asyncrun.vim’</p>
+<p>“YouCompleteMe<br>“Plugin ‘Valloric/YouCompleteMe’</p>
+<p>“gen tags<br>“Plugin ‘jsfaint/gen_tags.vim’ </p>
+<p>“gtags<br>Plugin ‘aceofall/gtags.vim’</p>
+<p>“ Keep Plugin commands between vundle#begin/end.<br>“ plugin on GitHub repo<br>“Plugin ‘tpope/vim-fugitive’<br>“ plugin from <a href="http://vim-scripts.org/vim/scripts.html" target="_blank" rel="external">http://vim-scripts.org/vim/scripts.html</a><br>“Plugin ‘L9’<br>“ Git plugin not hosted on GitHub<br>“Plugin ‘git://git.wincent.com/command-t.git’<br>“ git repos on your local machine (i.e. when working on your own plugin)<br>“Plugin ‘file:///home/gmarik/path/to/plugin’<br>“ The sparkup vim script is in a subdirectory of this repo called vim.<br>“ Pass the path to set the runtimepath properly.<br>“Plugin ‘rstacruz/sparkup’, {‘rtp’: ‘vim/‘}<br>“ Avoid a name conflict with L9<br>“Plugin ‘user/L9’, {‘name’: ‘newL9’}</p>
+<p>“ All of your Plugins must be added before the following line<br>call vundle#end()            “ required<br>filetype plugin indent on    “ required<br>“ To ignore plugin indent changes, instead use:<br>“filetype plugin on<br>“<br>“ Brief help<br>“ :PluginList       - lists configured plugins<br>“ :PluginInstall    - installs plugins; append <code>!</code> to update or just :PluginUpdate<br>“ :PluginSearch foo - searches for foo; append <code>!</code> to refresh local cache<br>“ :PluginClean      - confirms removal of unused plugins; append <code>!</code> to auto-approve removal<br>“<br>“ see :h vundle for more details or wiki for FAQ<br>“ Put your non-Plugin stuff after this line</p>
+<p>set nocompatible<br>source $VIMRUNTIME/vimrc_example.vim<br>source $VIMRUNTIME/mswin.vim<br>behave mswin</p>
+<p>“set diffexpr=YourDiff()<br>“function YourDiff()<br>“  let opt = ‘-a –binary ‘<br>“  if &amp;diffopt =~ ‘icase’ | let opt = opt . ‘-i ‘ | endif<br>“  if &amp;diffopt =~ ‘iwhite’ | let opt = opt . ‘-b ‘ | endif<br>“  let arg1 = v:fname_in<br>“  if arg1 =~ ‘ ‘ | let arg1 = ‘“‘ . arg1 . ‘“‘ | endif<br>“  let arg2 = v:fname_new<br>“  if arg2 =~ ‘ ‘ | let arg2 = ‘“‘ . arg2 . ‘“‘ | endif<br>“  let arg3 = v:fname_out<br>“  if arg3 =~ ‘ ‘ | let arg3 = ‘“‘ . arg3 . ‘“‘ | endif<br>“  let eq = ‘’<br>“  if $VIMRUNTIME =~ ‘ ‘<br>“    if &amp;sh =~ ‘\&lt;cmd’<br>“      let cmd = ‘“”‘ . $VIMRUNTIME . ‘\diff”‘<br>“      let eq = ‘“‘<br>“    else<br>“      let cmd = substitute($VIMRUNTIME, ‘ ‘, ‘“ ‘, ‘’) . ‘\diff”‘<br>“    endif<br>“  else<br>“    let cmd = $VIMRUNTIME . ‘\diff’<br>“  endif<br>“  silent execute ‘!’ . cmd . ‘ ‘ . opt . arg1 . ‘ ‘ . arg2 . ‘ &gt; ‘ . arg3 . eq<br>“endfunction</p>
+<p>“Personal Settings.<br>“More to be added soon.<br>“execute pathogen#infect()<br>filetype plugin indent on<br>syntax enable<br>syntax on<br>“Set the status line options. Make it show more information.<br>set laststatus=2<br>set statusline=%F%m%r%h%w\ [FORMAT=%{&amp;ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\”%d/%m/%y\ -\ %H:%M\”)}<br>“Set Color Scheme and Font Options<br>“colorscheme gruvbox<br>“colorscheme monokai<br>“colorscheme twilight<br>colorscheme candy<br>set guifont=Consolas:h12<br>“set line no, buffer, search, highlight, autoindent and more.<br>set nu<br>set hidden<br>set ignorecase<br>set incsearch<br>set smartcase<br>set showmatch<br>set autoindent<br>set ruler<br>set vb<br>set viminfo+=n$VIM/_viminfo<br>set noerrorbells<br>set showcmd<br>set mouse=a<br>set history=1000<br>set undolevels=1000<br>set exrc<br>set secure<br>set tabstop=4<br>set softtabstop=4<br>set shiftwidth=4<br>“set noexpandtab<br>set expandtab<br>set colorcolumn=110<br>set guifont=Consolas:h10<br>highlight ColorColumn ctermbg=darkgray<br>set bg=dark<br>set backupdir=e:\study\vimswap</p>
+<p>“Plugins ……………………………..<br>“ NERDTree<br>nmap <silent> <f8> <esc>:NERDTreeToggle<cr><br>imap <silent> <f8> <esc>:NERDTreeToggle<cr><br>let NERDTreeQuitOnOpen=1<br>let g:NERDTreeWinPos = “right”</cr></esc></f8></silent></cr></esc></f8></silent></p>
+<p>“taglist<br>let Tlist_Show_One_File=1<br>let Tlist_Exit_OnlyWindow=1<br>let Tlist_Use_Right_Window=0<br>map <silent> <f9> :TlistToggle<cr></cr></f9></silent></p>
+<p>“set tags=’$PPLIBTAGS’<br>set tags=e:\depot\pplib\drivers\powerplay*\tags</p>
+<p>“minibufexpl<br>map <silent> <f7> <esc>:MBEToggle!<cr></cr></esc></f7></silent></p>
+<p>“ Gtags<br>map <silent> <f6> <esc>:GtagsCursor<cr><br>“easymotion<br>map <leader> <plug>(easymotion-prefix)<br>map <leader>s <plug>(easymotion-sn)<br>omap <leader>s <plug>(easymotion-tn)<br>“map n <plug>(easymotion-next)<br>“map N <plug>(easymotion-prev)<br>let g:EasyMotion_smartcase=1<br>“map <leader>r <plug>(easymotion-repeat)<br>“map <leader>l <plug>(easymotion-lineforward)<br>“map <leader>j <plug>(easymotion-j)<br>“map <leader>k <plug>(easymotion-k)<br>“map <leader>h <plug>(easymotion-linebackward)</plug></leader></plug></leader></plug></leader></plug></leader></plug></leader></plug></plug></plug></leader></plug></leader></plug></leader></cr></esc></f6></silent></p>
+<p>map <leader>r <plug>(easymotion-repeat)<br>“nmap <right> <plug>(easymotion-lineforward)<br>“nmap <down> <plug>(easymotion-j)<br>“nmap <up> <plug>(easymotion-k)<br>“nmap <left> <plug>(easymotion-linebackward)<br>nmap f <plug>(easymotion-f)<br>nmap F <plug>(easymotion-F)<br>“ctrlp<br>“let g:ctrlp_map=’<c-p>‘<br>let g:ctrlp_cmd=’CtrlP :pwd’<br>noremap <c-a> :CtrlP $ROOT<cr></cr></c-a></c-p></plug></plug></plug></left></plug></up></plug></down></plug></right></plug></leader></p>
+<p>“cscope</p>
+<p>“Easygrep<br>“let g:EasyGrepCommand = 0<br>“let g:EasyGrepRecursive = 1<br>“let g:EasyGrepIgnoreCase = 1<br>“let g:EasyGrepFilesToExclude = “<em>.docx, </em>.xlsx, <em>.zip, cscope.</em>, <em>.a, </em>.o, <em>.pyc, </em>.gcno, *.gcda”</p>
+<p>“Ag</p>
+<p>let g:ag_prg=”ag –column –nogroup –noheading –ignore <em>/ai –ignore </em>/tags –ignore <em>/build –ignore </em>/tools –ignore <em>/firmware –ignore </em>.d –ignore *.obj”</p>
+<p>“Semantic-highlight<br>“nnoremap <leader>s <esc>:SemanticHighlight<cr></cr></esc></leader></p>
+<p>“Plugins done ……………………………</p>
+<p>“Fast reloading of the .vimrc<br>map <silent> <leader>ss <esc>:w<cr> :source $vim_vimrc<cr><br>“Fast editing of .vimrc<br>map <silent> <leader>ee <esc>:e $vim_vimrc<cr></cr></esc></leader></silent></cr></cr></esc></leader></silent></p>
+<p>“netrw setting<br>let g:netrw_winsize=30<br>nmap <silent> <leader>fe :Sexplore!<cr></cr></leader></silent></p>
+<p>“q!<br>map <silent> <f10> <esc>:q!<cr></cr></esc></f10></silent></p>
+<p>“exclude<br>set wildignore+=<em>/tmp/</em>,e:/pplib/drivers/powerplay/firmware/*<br>“ defult directory<br>cd $ROOT</p>
+<p>“gtags<br>set cscopetag<br>set csprg=gtags-cscope<br>cs add GTAGS</p>
+<p>“let GtagsCscope_Auto_Load=1<br>“let CtagsCscope_Auto_Map=1<br>“let GtagsCscope_Quiet=1</p>
+<p>let Gtags_VerticalWindow=0<br>“ Gtags_Auto_Map<br>let Gtags_Auto_Update=0<br>let Gtags_No_Auto_Jump=1 </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/12/06/My-vimrc/" data-id="ciweggtxu0000v0nmgzjt5b4z" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/12/06/hello-world/" class="article-date">
+  <time datetime="2016-12-07T04:27:59.609Z" itemprop="datePublished">2016-12-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/06/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/12/06/hello-world/" data-id="ciweggty10001v0nm2blurxfo" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/12/06/My-vimrc/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/06/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Hang Zhou<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
